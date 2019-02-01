@@ -58,8 +58,8 @@ class ChooseProductPage extends React.Component {
   render() {
     let messageAtTop;
     switch (this.props.shopType) {
-      case 'bikes':
-        messageAtTop = <FormattedMessage id='Buy a Bike' />;
+      case 'insurances':
+        messageAtTop = <FormattedMessage id='Buy a Insurance' />;
         break;
       case 'smart-phones':
         messageAtTop = <FormattedMessage id='Buy a Smart Phone' />;
@@ -77,17 +77,23 @@ class ChooseProductPage extends React.Component {
       );
     }
 
+    const style = {
+      display: "flex",
+      flexDirection: "row",
+      flexWrap: "nowrap",
+    };
+
+    const actionAreastyle = {
+      display: "flex",
+      flexDirection: "row",
+      flexWrap: "flex-end",
+    };
+
     return (
       <div>
-        <div>
-          <div className='ibm-columns'>
-            <div className='ibm-col-1-1'>
-              <h3 className='ibm-h3'>{messageAtTop}</h3>
-            </div>
-          </div>
+        <div style={style}>
           <div className='ibm-columns'>
             <div className='ibm-col-2-1 ibm-col-medium-5-3 ibm-col-small-1-1'>
-              <label><FormattedMessage id='Choose a Product' />:</label>
               <span>
                 <ProductCarousel products={products}
                   selectedProductIndex={productInfo.index}
@@ -100,8 +106,8 @@ class ChooseProductPage extends React.Component {
               <div className='ibm-column-form'>
                 <p>
                   <label><FormattedMessage id='Product Brand' />:</label>
-                  <span>
-                    <input type='text' readOnly value={productInfo.brand} />
+                  <span>{productInfo.brand}
+                    // <input type='text' readOnly value={productInfo.brand} />
                   </span>
                 </p>
                 <p>
@@ -134,7 +140,7 @@ class ChooseProductPage extends React.Component {
             </div>
           </div>
         </div>
-        <div className='ibm-columns'>
+        <div className='ibm-columns' style={actionAreastyle}>
           <div className='ibm-col-2-1 ibm-col-medium-5-3 ibm-col-small-1-1 ibm-right'>
             <button type='button' className='ibm-btn-pri ibm-btn-blue-50'
               onClick={this.nextStep}>

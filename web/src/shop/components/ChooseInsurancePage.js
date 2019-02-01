@@ -130,8 +130,8 @@ class ChooseInsurancePage extends React.Component {
   render() {
     let messageAtTop;
     switch (this.props.shopType) {
-      case 'bikes':
-        messageAtTop = <FormattedMessage id='Buy Insurance for the Bike' />;
+      case 'insurances':
+        messageAtTop = <FormattedMessage id='Buy Insurance for the Insurance' />;
         break;
       case 'smart-phones':
         messageAtTop = <FormattedMessage

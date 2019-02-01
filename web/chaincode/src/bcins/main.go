@@ -37,7 +37,7 @@ var bcFunctions = map[string]func(shim.ChaincodeStubInterface, []string) pb.Resp
 	// Repair Shop Peer
 	"repair_order_ls":       listRepairOrders,
 	"repair_order_complete": completeRepairOrder,
-	// Police Peer
+	// FraudInspection Peer
 	"theft_claim_ls":      listTheftClaims,
 	"theft_claim_process": processTheftClaim,
 }

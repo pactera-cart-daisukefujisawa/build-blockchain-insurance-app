@@ -114,37 +114,37 @@ The home page shows the participants (Peers) in the network. You can see that th
 
 ![Blockchain Insurance](images/home.png)
 
-Imagine being a consumer (hereinafter called “Biker”) that wants to buy a phone, bike or Ski. By clicking on the “Go to the shop” section, you will be redirected to the shop (shop peer) that offers you the following products.
+Imagine being a consumer (hereinafter called “Insurancer”) that wants to buy a phone, insurance or Ski. By clicking on the “Go to the shop” section, you will be redirected to the shop (shop peer) that offers you the following products.
 
 ![Customer Shopping](images/Picture1.png)
 
-You can see the three products offered by the shop(s) now. In addition, you have insurance contracts available for them. In our scenario, you are an outdoor sport enthusiast who wants to buy a new Bike. Therefore, you’ll click on the Bike Shop section.
+You can see the three products offered by the shop(s) now. In addition, you have insurance contracts available for them. In our scenario, you are an outdoor sport enthusiast who wants to buy a new Insurance. Therefore, you’ll click on the Insurance Shop section.
 
 ![Shopping](images/Picture2.png)
 
-In this section, you are viewing the different bikes available in the store. You can select within four different Bikes. By clicking on next you’ll be forwarded to the next page which will ask for the customer’s personal data.
+In this section, you are viewing the different insurances available in the store. You can select within four different Insurances. By clicking on next you’ll be forwarded to the next page which will ask for the customer’s personal data.
 
-![Bike Shop](images/Picture3.png)
+![Insurance Shop](images/Picture3.png)
 
 You have the choice between different insurance contracts that feature different coverage as well as terms and conditions. You are required to type-in your personal data and select a start and end date of the contract. Since there is a trend of short-term or event-driven contracts in the insurance industry you have the chance to select the duration of the contract on a daily basis. The daily price of the insurance contract is being calculated by a formula that had been defined in the chaincode. By clicking on next you will be forwarded to a screen that summarizes your purchase and shows you the total sum.
 
-![Bike Insurance](images/Picture4.png)
+![Insurance Insurance](images/Picture4.png)
 
 The application will show you the total sum of your purchase. By clicking on “order” you agree to the terms and conditions and close the deal (signing of the contract). In addition, you’ll receive a unique username and password. The login credentials will be used once you file a claim.  A block is being written to the Blockchain.
 
 >note You can see the block by clicking on the black arrow on the bottom-right.
 
-![Bike Insurance](images/Picture5.png)
+![Insurance Insurance](images/Picture5.png)
 
 Login credentials. Block written to the chain.
 
 ![Login Credentials](images/Picture6.png)
 
-Once an incident has happened the Biker can file a claim on his own by selecting the “claim Self-Service” tab.
+Once an incident has happened the Insurancer can file a claim on his own by selecting the “claim Self-Service” tab.
 
 ![Claim Service](images/Picture61.png)
 
-The Biker will be asked to login by using the credentials that had been given to him before.
+The Insurancer will be asked to login by using the credentials that had been given to him before.
 
 ![Login](images/Picture7.png)
 
@@ -152,16 +152,16 @@ He can file a new claim by selecting the tab shown above.
 
 ![File Claim](images/Picture8.png)
 
-The Biker can briefly describe the damage on his bike and/or select whether it has been stolen. In case the Bike has been stolen the claim will be processed through the police who has to confirm or deny the theft (option 1). In case there was just a damage the claim will be processed through the repair shop (option 2). In the following section, we will start with option 1.
+The Insurancer can briefly describe the damage on his insurance and/or select whether it has been stolen. In case the Insurance has been stolen the claim will be processed through the police who has to confirm or deny the theft (option 1). In case there was just a damage the claim will be processed through the repair shop (option 2). In the following section, we will start with option 1.
 
 ![Claim Description](images/Picture9.png)
 
 **Option 1**
 
-Once the Biker has submitted the claim it will be shown in the box marked in red. Furthermore, another block is being written to the chain.
+Once the Insurancer has submitted the claim it will be shown in the box marked in red. Furthermore, another block is being written to the chain.
 ![Claim Block](images/Picture10.png)
 
-The Biker can also view the active claims. **Note:** You may need to re-log into Claims Processing to see the new active claim.
+The Insurancer can also view the active claims. **Note:** You may need to re-log into Claims Processing to see the new active claim.
 
 ![Active Claims](images/Picture11.png)
 
@@ -169,19 +169,19 @@ By selecting “claim processing” the Insurance company can view all active cl
 
 ![Claim Processing](images/Picture12.png)
 
-The Police Peer can view the claims that include theft. In case the bike has been reported stolen they can confirm the claim and include a file reference number. In case no theft has been reported they can reject the claim and it will not be processed.
+The Police Peer can view the claims that include theft. In case the insurance has been reported stolen they can confirm the claim and include a file reference number. In case no theft has been reported they can reject the claim and it will not be processed.
 
 ![Police Peer](images/Picture13.png)
 
-Let’s assume the Biker did not rip-off the insurance company and has reported the bike as stolen. The police will confirm the claim which results in another Block being written to the chain.
+Let’s assume the Insurancer did not rip-off the insurance company and has reported the insurance as stolen. The police will confirm the claim which results in another Block being written to the chain.
 
 ![Police Transaction](images/Picture14.png)
 
-Going back to the “claim processing” tab you can see that the insurance company has the option to reimburse the claim now because the police had confirmed that the bike has been stolen. Block is being written to the chain
+Going back to the “claim processing” tab you can see that the insurance company has the option to reimburse the claim now because the police had confirmed that the insurance has been stolen. Block is being written to the chain
 
 ![Claim Processing](images/Picture15.png)
 
-The Biker can see the new status of his claim which changed to reimbursed.
+The Insurancer can see the new status of his claim which changed to reimbursed.
 
 ![User login](images/Picture16.png)
 
@@ -199,7 +199,7 @@ The Repair Shop will get a message showing the repair order. Once they’ve done
 
 ![Reapir Shop](images/Picture19.png)
 
-The Biker can see in his “claim self-service” tab that the claim has been resolved and the bike was repaired by the shop.
+The Insurancer can see in his “claim self-service” tab that the claim has been resolved and the insurance was repaired by the shop.
 
 ![Claim Status](images/Picture20.png)
 

@@ -20,7 +20,7 @@ router.post('/api/contract-types', async (req, res) => {
   }
   let letter;
   switch ((req.body.shopType || '').toLowerCase()) {
-    case 'bikes':
+    case 'insurances':
       letter = 'B';
       break;
     case 'smart-phones':
@@ -123,7 +123,7 @@ router.post('/api/blocks', async (req, res) => {
 router.get('*', (req, res) => {
   res.render('shop', {
     shopActive: true,
-    bikesActive: req.originalUrl.includes('bikes'),
+    insurancesActive: req.originalUrl.includes('insurances'),
     smartPhonesActive: req.originalUrl.includes('smart-phones'),
     skisActive: req.originalUrl.includes('skis')
   });

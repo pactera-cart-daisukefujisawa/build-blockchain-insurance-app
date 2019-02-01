@@ -78,9 +78,12 @@ class ProductCarousel extends React.Component {
 
   carouselItem(product, index) {
     let isActive = this.selected === product;
+    const style = {
+      height: "40vh"
+    };
     return (
       <div key={index} className={`${isActive ? ' is-active' : ''}`}>
-        <p><img src={product.imgSrc} /></p>
+        <p><img style={style} src={product.imgSrc} /></p>
         <p dangerouslySetInnerHTML={{ __html: product.description }} />
       </div>
     );

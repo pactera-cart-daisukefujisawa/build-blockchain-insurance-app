@@ -1,37 +1,37 @@
 export default {
-  "bikes": [
+  "insurances": [
     {
-      "brand": "Canyon",
-      "model": "Spectral AL 6.0",
+      "brand": "Insurance Company 1",
+      "model": "Insurance1",
       "price": 3420.0,
-      "imgSrc": "/img/products/bike1.png",
-      "description": `Colour: Grey <br> Type: All-Mountain`
+      "imgSrc": "/img/products/insurance1.png",
+      "description": `good sleep is given you <br> good tommorow`
     },
     {
-      "brand": "Centurion",
-      "model": "No Pogo 800.27",
+      "brand": "Insurance Company 1",
+      "model": "Insurance2",
       "price": 2110.0,
-      "imgSrc": "/img/products/bike2.png",
-      "description": `Colour: Grey <br> Type: All-Mountain`
+      "imgSrc": "/img/products/insurance2.png",
+      "description": `good wake-up is given you <br> good health`
     },
     {
-      "brand": "Popal",
-      "model": "E-VO9.0",
+      "brand": "Insurance Company 1",
+      "model": "Insurance3",
       "price": 4050.0,
-      "imgSrc": "/img/products/bike3.png",
-      "description": `Colour: Black <br> Type: Pedelec`
+      "imgSrc": "/img/products/insurance3.png",
+      "description": `kindness is given you <br> good relataions`
     },
     {
-      "brand": "Serious",
-      "model": "Bear Rock CX500",
+      "brand": "Insurance Company 1",
+      "model": "Insurance4",
       "price": 1023.0,
-      "imgSrc": "/img/products/bike4.png",
-      "description": `Colour: Black <br> Typ: Pedelec`
+      "imgSrc": "/img/products/insurance4.png",
+      "description": `learning is given you <br> good future`
     }
   ],
   "smart-phones": [
     {
-      "brand": "Samsung",
+      "brand": "Insurance Company 1",
       "model": "S7",
       "price": 660,
       "imgSrc": "/img/products/smartPhone1.png",

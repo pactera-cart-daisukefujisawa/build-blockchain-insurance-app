@@ -125,7 +125,7 @@ Successfully instantiated chaincode on all peers.
 
 ![客户购物](images/Picture1.png)
 
-可以看到该商店现在提供了 3 款产品。此外，您拥有可用于这些产品的保险合约。在我们的场景中，您是一位想买一辆新自行车的户外运动爱好者。因此，您将单击 Bike Shop 部分。
+可以看到该商店现在提供了 3 款产品。此外，您拥有可用于这些产品的保险合约。在我们的场景中，您是一位想买一辆新自行车的户外运动爱好者。因此，您将单击 Insurance Shop 部分。
 
 ![购物](images/Picture2.png)
 

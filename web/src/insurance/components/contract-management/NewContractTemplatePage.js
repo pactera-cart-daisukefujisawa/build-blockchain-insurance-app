@@ -24,7 +24,7 @@ class NewContractTemplatePage extends React.Component {
 
     this.state = {
       description: 'New Contract',
-      bikeShop: true,
+      insuranceShop: true,
       phoneShop: false,
       skiShop: false,
       formulaPerDay: 'price * 0.001',
@@ -56,7 +56,7 @@ class NewContractTemplatePage extends React.Component {
           validated = parseInt(value, 10);
           break;
         case this.refs.theftInsuredField:
-        case this.refs.bikeShopField:
+        case this.refs.insuranceShopField:
         case this.refs.phoneShopField:
         case this.refs.skiShopField:
           validated = checked;
@@ -71,13 +71,13 @@ class NewContractTemplatePage extends React.Component {
 
   createContractType() {
     const {
-      description, bikeShop, phoneShop, skiShop, formulaPerDay,
+      description, insuranceShop, phoneShop, skiShop, formulaPerDay,
       maxSumInsured, theftInsured, conditions, minDurationDays, maxDurationDays
     } = this.state;
     this.props.contractTemplateActions.createContractType({
       description,
       shopType:
-      `${bikeShop ? 'B' : ''}${phoneShop ? 'P' : ''}${skiShop ? 'S' : ''}`,
+      `${insuranceShop ? 'B' : ''}${phoneShop ? 'P' : ''}${skiShop ? 'S' : ''}`,
       formulaPerDay,
       maxSumInsured,
       theftInsured,
@@ -91,7 +91,7 @@ class NewContractTemplatePage extends React.Component {
 
   render() {
     const {
-      description, bikeShop, phoneShop, skiShop, formulaPerDay,
+      description, insuranceShop, phoneShop, skiShop, formulaPerDay,
       maxSumInsured, theftInsured, conditions, minDurationDays, maxDurationDays
     } = this.state;
 
@@ -122,10 +122,10 @@ class NewContractTemplatePage extends React.Component {
                 <span className='ibm-input-group'>
                   <span>
                     <input type='checkbox' className='ibm-styled-checkbox'
-                      id='bikeShopField' ref='bikeShopField' name='bikeShop'
-                      checked={bikeShop} onChange={this.setField} />
-                    <label className='ibm-field-label' htmlFor='bikeShopField'>
-                      <FormattedMessage id='Bike Shops' />
+                      id='insuranceShopField' ref='insuranceShopField' name='insuranceShop'
+                      checked={insuranceShop} onChange={this.setField} />
+                    <label className='ibm-field-label' htmlFor='insuranceShopField'>
+                      <FormattedMessage id='Insurance Shops' />
                     </label>
                   </span>
                   <br />

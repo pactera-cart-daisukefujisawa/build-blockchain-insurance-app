@@ -12,5 +12,5 @@ bin
 dist
 insurance-peer
 shop-peer
-police-peer
+fraud-inspection-peer
 repairshop-peer
