@@ -5,7 +5,7 @@ export default {
       "model": "Insurance1",
       "price": 3420.0,
       "imgSrc": "/img/products/insurance1.png",
-      "description": `good sleep is given you <br> good tommorow`
+      "description": `good sleep is given you <br> good tomorrow`
     },
     {
       "brand": "Insurance Company 1",
@@ -19,7 +19,7 @@ export default {
       "model": "Insurance3",
       "price": 4050.0,
       "imgSrc": "/img/products/insurance3.png",
-      "description": `kindness is given you <br> good relataions`
+      "description": `kindness is given you <br> good relations`
     },
     {
       "brand": "Insurance Company 1",
