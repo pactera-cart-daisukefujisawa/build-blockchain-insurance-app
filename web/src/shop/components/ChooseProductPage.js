@@ -83,6 +83,10 @@ class ChooseProductPage extends React.Component {
       flexWrap: "nowrap",
     };
 
+    const lavelStyle = {
+      fontWeight: "900",
+    };
+
     const actionAreastyle = {
       display: "flex",
       flexDirection: "row",
@@ -106,35 +110,26 @@ class ChooseProductPage extends React.Component {
               <div className='ibm-column-form'>
                 <p>
                   <label><FormattedMessage id='Product Brand' />:</label>
-                  <span>{productInfo.brand}
-                    // <input type='text' readOnly value={productInfo.brand} />
-                  </span>
+                  <span style={lavelStyle}>{productInfo.brand}</span>
                 </p>
                 <p>
                   <label><FormattedMessage id='Product Model' />:</label>
-                  <span>
-                    <input type='text' readOnly value={productInfo.model} />
-                  </span>
+                  <span style={lavelStyle}>{productInfo.model}</span>
                 </p>
                 <p>
                   <label><FormattedMessage id='Price' />:</label>
-                  <span>
-                    <input type='text' readOnly
-                      value={intl.formatNumber(productInfo.price,
+                  <span style={lavelStyle}>
+                    {intl.formatNumber(productInfo.price,
                         {
                           style: 'currency',
                           currency: intl.formatMessage({ id: 'currency code' }),
                           minimumFractionDigits: 2
-                        })} />
+                        })}
                   </span>
                 </p>
                 <p>
                   <label><FormattedMessage id='Serial No.' />:</label>
-                  <span>
-                    <input type='text'
-                      value={productInfo.serialNo}
-                      onChange={this.onSerialNoChanged} />
-                  </span>
+                  <span style={lavelStyle}>{productInfo.serialNo}</span>
                 </p>
               </div>
             </div>
