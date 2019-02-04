@@ -3,12 +3,25 @@ extends _layout
 block content
   .test-columns
     .network-container.test-card-container
+      .ibm-card.insurance-peer.test-card
+        .ibm-card__content
+          a(href='/insurance')
+            h3.ibm-h3 #{ __('Insurance') }
+          p.ibm-ind-link
+            a.ibm-forward-link(href='/insurance/self-service')
+              | #{ __('Go To The Claim Self-Service') }
+          p.ibm-ind-link
+            a.ibm-forward-link(href='/insurance/claim-processing')
+              | #{ __('Go To The Claim Processing') }
+          p.ibm-ind-link
+            a.ibm-forward-link(href='/insurance/contract-management')
+              | #{ __('Go To The Contract Management') }
       .ibm-card.shop-peer.test-card
         .ibm-card__content
-          a(href='/shop/insurances')
+          a(href='/shop')
             h3.ibm-h3 #{ __('Shop') }
           p.ibm-ind-link
-            a.ibm-forward-link(href='/shop/insurances') #{ __('Go To The Shop Peer') }
+            a.ibm-forward-link(href='/shop') #{ __('Go To The Shop Peer') }
       .ibm-card.police-peer.test-card
         .ibm-card__content
           a(href='/police')
@@ -23,16 +36,4 @@ block content
           p.ibm-ind-link
             a.ibm-forward-link(href='/repair-shop')
               | #{ __('Go To The Repair Shop Peer') }
-      .ibm-card.insurance-peer.test-card
-        .ibm-card__content
-          a(href='/insurance')
-            h3.ibm-h3 #{ __('Insurance') }
-          p.ibm-ind-link
-            a.ibm-forward-link(href='/insurance/self-service')
-              | #{ __('Go To The Claim Self-Service') }
-          p.ibm-ind-link
-            a.ibm-forward-link(href='/insurance/claim-processing')
-              | #{ __('Go To The Claim Processing') }
-          p.ibm-ind-link
-            a.ibm-forward-link(href='/insurance/contract-management')
-              | #{ __('Go To The Contract Management') }
+
