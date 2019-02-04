@@ -44,8 +44,7 @@ router.post('/api/contract-types', async (req, res) => {
 
   if (!Array.isArray(contractTypes)) {
     res.json({ error: "Could not retrieve contract types!" });
-  }
-  if(contractTypes.map) {
+  }else{
     res.json(
       contractTypes.map(contractType => {
         let mapped = Object.assign({}, contractType);
