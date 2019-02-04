@@ -45,12 +45,15 @@ router.post('/api/contract-types', async (req, res) => {
   if (!Array.isArray(contractTypes)) {
     res.json({ error: "Could not retrieve contract types!" });
   }
-  res.json(
-    contractTypes.map(contractType => {
-      let mapped = Object.assign({}, contractType);
-      delete mapped.shopType;
-      return mapped;
-    }));
+  if(contractTypes.map) {
+    res.json(
+      contractTypes.map(contractType => {
+        let mapped = Object.assign({}, contractType);
+        delete mapped.shopType;
+        return mapped;
+      })
+    )
+  }
 });
 
 router.post('/api/request-user', async (req, res) => {
